@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% 
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Gray, linkcolor=Gray} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\pagenumbering{gobble}
+
+\newcommand{\NewEntry}[2]{%
+	\par\addvspace{0.4em}
+	\noindent\hspace*{2em}%
+	\parbox[t]{\datebox}{\strut\small\itshape #1}%
+	\hspace*{1.5em}%
+	\parbox[t]{\dimexpr\textwidth-2em-\datebox-1.5em}{\strut #2}%
+	\par\addvspace{0.3em}%
+}
+
+\vspace{0.2em} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{0.85em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+\date{}
+\begin{document}
+	\thispagestyle{empty} % Stop the page count at the bottom of the first page
+	%----------------------------------------------------------------------------------------
+	%	NAME AND CONTACT INFORMATION SECTION
+	%----------------------------------------------------------------------------------------
+	\begin{cv}{\\ \Large{Gerardo Dur\'an Mart\'in}}\vspace{1.5em} % Your name
+		
+		
+		\noindent\spacedlowsmallcaps{Informaci\'on personal}\vspace{0.5em} % Personal information heading
+		
+		
+		\NewEntry{Birthday}{27 August 1994} % Date born
+		
+		\NewEntry{Email}{\href{mailto:g.duran@me.com}{g.duran@me.com}} % Email address
+		\NewEntry{GitHub}{\href{https://github.com/gerdm/}{github.com/gerdm}}
+		
+		\NewEntry{Cellphone}{+52 (999) 3514547} % Phone number(s)
+		
+		\NewEntry{Address}{Calle Lago Mayor 6, Col. Granada,  Miguel Hidalgo, CDMX, M\'exico.}
+		
+		
+		\vspace{1em} % Extra white space between the personal information section and goal
+		%----------------------------------------------------------------------------------------
+		%	EDUCATION
+		%----------------------------------------------------------------------------------------
+		
+		\noindent\spacedlowsmallcaps{Formaci\'on Acad\'emica}\vspace{1em}
+		
+		\Description{\MarginText{Agosto 2013 - Diciembre 2017} Licenciatura en Actuaria. \textit{Universidad Mar\'{i}sta, CDMX} \\ Graduado con excelencia académica obteniendo un resultado final de 9.4 / 10}
+		
+		
+		%----------------------------------------------------------------------------------------
+		%	WORK EXPERIENCE
+		%----------------------------------------------------------------------------------------
+		
+		\noindent\spacedlowsmallcaps{Experiencia Laboral}\vspace{1em}
+		
+		\NewEntry{Nov 2019 - Mayo 2020}{Coordinador Acad\'emico y Profesor}
+		\Description{\MarginText{ITAM} Diplomado \textit{Data Science and Machine Learning Applied to Financial Markets} en el Instituto Tecnol\'ogico Aut\'onomo de M\'exico (ITAM)}
+		
+		\NewEntry{Junio 2018 - Mayo 2020}{Co-fundador Analysic Nabla}
+		\Description{\MarginText{Analysic Nabla} Startup dedicada al desarrollo de modelos de inteligencia artificial aplicados a finanzas, sector inmobiliario y tecnolog\'ias de la informaci\'on.}
+		
+		\NewEntry{Agosto 2018 - Enero 2019}{Profesor}
+		\Description{\MarginText{Universidad Marista} L\'ogica y ciencias de la computaci\'on}
+				
+		\NewEntry{Octubre 2016 - Agosto 2017}{Gerente de Riesgos}
+		\Description{\MarginText{Santander} Gerente de riesgos financieros: valuaci\'on de derivados} 
+				
+		%------------------------------------------------
+		
+		\vspace{1em} % Extra space between major sections
+		
+		%----------------------------------------------------------------------------------------
+		%	ACADEMIC REFERENCES
+		%----------------------------------------------------------------------------------------
+		
+		%------------------------------------------------
+		
+		
+		\vspace{1em} % Extra space between major sections
+		
+		%----------------------------------------------------------------------------------------
+		%	COMPUTER SKILLS
+		%----------------------------------------------------------------------------------------
+		
+		\spacedlowsmallcaps{Habilidades Computacionales}\vspace{1em}
+		
+		\Description{\MarginText{Avanzado}\textsc{Python}}
+
+		\Description{\MarginText{Intermedio}\textsc{Excel-VBA}, \textsc{Octave-Matlab}, \textsc{SQL}, \textsc{R}, \textsc{Bash}}
+		
+		\Description{\MarginText{Principiante}\textsc{C++}}
+		
+		
+		%------------------------------------------------
+		
+		\vspace{1em} % Extra space between major sections
+		
+		%----------------------------------------------------------------------------------------
+		%	Projects and Awards 
+		%----------------------------------------------------------------------------------------
+		
+		\spacedlowsmallcaps{Cursos impartidos y proyectos adicionales\vspace{1em}}
+		
+		\Description{\MarginText{Mayo 8 - 9, 2019} {18hr Course: Python Avanzado en HSBC}}
+		
+		\Description{\MarginText{Abril 29, 2019} {Taller: Hora de C\'odigo en la Facultad de Estudios Superiores Acatl\'an}}
+		
+		\Description{\MarginText{Abril 10 - 11, 2019} {16hr Curso: Introducci\'on a la programaci\'on con Python en HSBC}}
+		
+		\Description{\MarginText{Marzo 12 - Abril 4, 2018} {24hr Curso: Curso: Introducci\'on a la programaci\'on con Python en Afore Banamex}}
+		
+		\Description{\MarginText{Marzo 12 - 13, 2018} {12hr Curso: Introducci\'on a Machine Learning con Python en DataVision}}
+		
+		\Description{\MarginText{Enero 2018 - Mayo 2018} {Curso: Introducci\'on a las matem\'aticas del aprendizaje de m\'aquina en la Universidad Marista}}
+		
+		\Description{\MarginText{Enero 2018 - Marzo 2018} {Curso: Matem\'aticas aplicadas con Python en la Universidad Marista}}
+		
+		\Description{\MarginText{Noviembre 9 - 10, 2016} \href{https://www.dropbox.com/s/0xr03h6qsjomw40/mlact.JPEG?dl=0}{Workhop: Introduction to Machine Learning for Actuaries}}		
+		
+		%----------------------------------------------------------------------------------------
+		%	Continous Education 
+		%----------------------------------------------------------------------------------------
+
+		\spacedlowsmallcaps{Educaci\'on Profesional}\vspace{1em}
+
+		\Description{\MarginText{Diciembre 2017 - Marzo 2018} \href{https://www.coursera.org/account/accomplishments/specialization/KTSSTFGDKTDN}{Deep Learning, a 5-course specialization by deeplearning.ai on Coursera}}
+		
+		\Description{\MarginText{Noviembre 2017} \href{https://www.coursera.org/account/accomplishments/verify/2SHACES7ZAP5}{Neural Networks for Machine Learning}}		
+		
+		\Description{\MarginText{Agosto 2017} \href{https://verify.lagunita.stanford.edu/SOA/049aba5a92914a91b9fa54f5d90af0bc/}{Statistical Learning by Stanford Online}}
+		
+		\Description{\MarginText{Agosto 2016} \href{https://www.coursera.org/account/accomplishments/certificate/PUW3G72XQ6SY}{Machine Learning by Stanford University on Coursera}}
+
+		
+		\Description{\MarginText{Julio 2016} \href{https://courses.edx.org/certificates/10fe7e2c2ff74fee9ffe76c5784ec868}{Pricing Options With Mathematical Models by Caltech University on Edx}}
+		
+		\Description{\MarginText{Diciembre 2015 - Julio 2016} \href{https://www.coursera.org/account/accomplishments/specialization/EPL9QQCFGB39}{Data Science, a 10-course specialization by JHU on Coursera}}
+		
+		\vspace{1em} % Extra space between major sections
+				
+		\Description{\MarginText{Julio 2015} Cambridge English Level 1 Certificate in ESOL International, Cambridge English Language Assessment, License Number: 155MX0300137}
+		
+		\vspace{1em} % Extra space between major sections
+		
+		\Description{\MarginText{Mayo 2015} Introduction to Computational Finance and Financial Econometrics by The University Of Washington}
+				
+		\Description{\MarginText{Diciembre 2014} \href{https://www.coursera.org/account/accomplishments/certificate/9Q3ACWPBDZ}{Financial Markets by Yale University on Coursera} }
+		
+		\Description{\MarginText{Octubre 2014} Introducci\'on al An\'alisis Econom\'etrico con R por la Asociaci\'on de Ex alumnos de la Facultad de Econom\'ia de la UNAM, A.C.}
+		
+		\vspace{1em} % Extra space between major sections
+				
+		%----------------------------------------------------------------------------------------
+		%	COMPUTER SKILLS
+		%----------------------------------------------------------------------------------------
+		
+		\spacedlowsmallcaps{Idiomas}\vspace{1em}
+		
+		\Description{\MarginText{English} CEFR: C1 / IELTS 7.5 Overall Band Score}
+	\end{cv}
+	
+\end{document}
